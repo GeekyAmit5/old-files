@@ -1,0 +1,3 @@
+Munna is a good guy
+t = False
+q = 25

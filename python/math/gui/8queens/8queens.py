@@ -27,8 +27,7 @@ def doIt(x, y, n):
 def place():
     global grid, num
     if num == order:
-        pygame.time.delay(1)
-        exit()
+        pygame.time.delay(500)
     else:
         for i in range(order):
             if not grid[num][i]:
