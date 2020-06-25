@@ -1,2 +1,1 @@
-x, y = input().split()
-print(int(x)+int(y))
+print(sum(map(int, input().split())))
