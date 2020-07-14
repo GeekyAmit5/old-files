@@ -1,3 +1,3 @@
-Munna is a good guy
-t = False
-q = 25
+Amit is a good guy
+sound = 1
+time = False

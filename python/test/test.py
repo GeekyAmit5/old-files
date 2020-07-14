@@ -3,10 +3,17 @@ import sys
 import fileinput
 import time
 
-
-# for line in fileinput.input("python/test/test.txt", inplace=True):
-#     line = line.replace("t = True", "t = False")
+# fh = fileinput.input("python/test/test.txt", inplace=True)
+# for line in fh:
+#     if line.startswith("time"):
+#         line = line.replace("True", "False")
 #     sys.stdout.write(line)
 
+fh = open("python/test/test.txt")
+for line in fh:
+    if line.startswith("s"):
+        words = line.split()
+        sound = bool(int(words[-1]))
 
-print(time.clock())
+print(sound)
+print(type(sound))
