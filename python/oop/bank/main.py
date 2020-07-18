@@ -3,7 +3,6 @@ import datetime
 import os
 import fileinput
 import sys
-import pygame
 
 
 # class customer:
@@ -645,21 +644,4 @@ def main():
         Clock.tick(fps)
 
 
-pygame.init()
-pygame.display.set_caption("online Banking")
-# pygame.display.set_icon(pygame.image.load("python/oop/bank/data/images/icon.ico"))
-win = pygame.display.set_mode((1000, 600))
-bg = pygame.image.load("python/oop/bank/data/images/bg.jpg")
-Clock = pygame.time.Clock()
-# rect1 = pygame.Rect(50, 130, 300, 60)
-fps = 10
-black = (0, 0, 0)
-white = (255, 255, 255)
-green = (51, 204, 89)
-red = (250, 51, 51)
-
-
 main()
-
-
-# 9921624571
