@@ -15,9 +15,9 @@ black = (0, 0, 0)
 red = (255, 0, 0)
 green = (0, 255, 0)
 white = (255, 255, 255)
-grid = [[random.choice([" ","X", "XX", "XXX", "O", "OO", "OOO"])
-         for x in range(column)] for y in range(row)]
-# grid = [[" " for x in range(column)] for y in range(row)]
+# grid = [[random.choice([" ","X", "XX", "XXX", "O", "OO", "OOO"])
+#          for x in range(column)] for y in range(row)]
+grid = [[" " for x in range(column)] for y in range(row)]
 ai = "X"
 human = "O"
 turn = ai

@@ -69,7 +69,7 @@ pygame.display.set_caption("8 Queen's")
 win = pygame.display.set_mode((width, height))
 grid = [[0 for x in range(order)] for y in range(order)]
 num = 0
-queen = pygame.image.load("queen.png")
+queen = pygame.image.load("python/math/gui/8queens/queen.png")
 drawGrid(order)
 pygame.display.update()
 place()

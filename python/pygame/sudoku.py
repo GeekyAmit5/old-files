@@ -67,7 +67,7 @@ def writeIt(color, x, y, n):
 
 
 def colorIt(color, x, y):
-    # pygame.time.delay(5)
+    pygame.time.delay(10)
     pygame.draw.rect(win, color, (3 + y * width / column, 3 + x *
                                   height / row, width / column - 3, height / row - 3))
 
@@ -91,8 +91,8 @@ def solve():
     print(np.matrix(grid), "\n")
     total += 1
     print("Total :", total)
-    # time.sleep(3)
-    # exit()
+    time.sleep(3)
+    exit()
 
 
 def drawGrid(color, row, column):

@@ -62,7 +62,7 @@ def main(source, destination):
     pygame.display.update()
     run = True
     while run and q:
-        # pygame.time.delay(100)
+        pygame.time.delay(1)
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
@@ -95,7 +95,9 @@ yellow = (255, 255, 0)
 red = (255, 0, 0)
 green = (0, 255, 0)
 blue = (0, 0, 255)
-source = (random.randint(0, 49), random.randint(0, 49))
-destination = (random.randint(0, 49), random.randint(0, 49))
+# source = (random.randint(0, 49), random.randint(0, 49))
+source = (10, 10)
+destination = (40, 40)
+# destination = (random.randint(0, 49), random.randint(0, 49))
 mark = [[0 for x in range(column)] for y in range(row)]
 main(source, destination)
