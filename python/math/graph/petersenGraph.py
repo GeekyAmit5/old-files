@@ -32,15 +32,15 @@ def color():
                     pygame.draw.circle(
                         win, j, (coordinates[i][0], coordinates[i][1]), 28)
                     pygame.display.update()
-                    pygame.time.delay(25)
+                    pygame.time.delay(100)
                     color()
                     ans.pop()
                     pygame.draw.circle(
                         win, black, (coordinates[i][0], coordinates[i][1]), 28)
                     pygame.display.update()
-                    pygame.time.delay(25)
+                    pygame.time.delay(100)
             return
-    time.sleep(0.5)
+    time.sleep(1)
     # exit()
 
 
