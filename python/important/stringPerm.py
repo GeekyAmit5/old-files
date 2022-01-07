@@ -24,6 +24,6 @@ def perm():
                 ans.pop()
 
 
-text = "password"
+text = input('Enter the string: ')
 ans = []
 perm()
