@@ -1,21 +1,24 @@
-import os
-import sys
-import fileinput
+import random
 import time
 
-# fh = fileinput.input("python/test/test.txt", inplace=True)
-# for line in fh:
-#     if line.startswith("time"):
-#         line = line.replace("True", "False")
-#     sys.stdout.write(line)
 
-# fh = open("python/test/test.txt")
-# for line in fh:
-#     if line.startswith("s"):
-#         words = line.split()
-#         sound = bool(int(words[-1]))
+def sod1(x):
+    ans = 0
+    while x:
+        ans += x % 10
+        x //= 10
+    return ans
 
-# print(sound)
-# print(type(sound))
 
-print(ord("i"))
+def sod2(x):
+    if x//10:
+        return x % 10+sod2(x//10)
+    return x
+
+
+for i in range(10):
+    n = random.randint(1, 10000000)
+    print('\n', n, sep='')
+    print(sod1(n))
+    print(sod2(n))
+    time.sleep(0.5)

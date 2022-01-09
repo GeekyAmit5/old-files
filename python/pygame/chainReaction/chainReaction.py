@@ -5,10 +5,10 @@ import pygame
 
 
 pygame.init()
-width = 1300
-height = 700
-row = 20
-column = 38
+width = 600
+height = 600
+row = 10
+column = 10
 pygame.display.set_caption("Chain Reaction")
 win = pygame.display.set_mode((width, height))
 black = (0, 0, 0)
@@ -98,7 +98,7 @@ def isWinner(turn):
 def popup(x, y):
     drawGrid(color, row, column)
     pygame.display.update()
-    # pygame.time.delay(round(314//math.sqrt(row*column)))
+    pygame.time.delay(round(314//math.sqrt(row*column)))
     isWinner(turn)
     if (x == 0 or x == row-1) and (y == 0 or y == column-1):
         if not mark(x, y, 1):
@@ -137,7 +137,7 @@ def mark(x, y, n):
             return True
     grid[x][y] = " "
     colorIt(x, y)
-    # pygame.mixer.Sound("laser.wav").play()
+    pygame.mixer.Sound("python/pygame/chainReaction/laser.wav").play()
     return False
 
 
