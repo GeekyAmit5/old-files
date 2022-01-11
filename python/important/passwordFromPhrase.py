@@ -7,13 +7,12 @@ length = int(input('Enter the length of the password:'))
 phrase = input('Enter the phrase:')
 lp = len(phrase)
 password = ''
-M=2*max(length,lp)+1
-m=2*min(length,lp)+1
-L=lp+length
-temp=2*(L+M+m)+1
+M = 2*max(length, lp)+1
+m = 2*min(length, lp)+1
+temp = 2*(lp+length+sum([ord(i) for i in phrase]))+1
 for i in range(length//lp+1):
     for x in phrase:
-        temp= ((ord(x)+L+i)*temp+ord(x)+L+i)%(10**M+m)
-        password += str[temp%n]
+        temp = ((ord(x)+m+temp+i)*temp+ord(x)+temp+M+i) % (10**M+m)
+        password += str[temp % n]
 print('Password is:')
 print(password[:length])
