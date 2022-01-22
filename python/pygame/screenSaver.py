@@ -47,10 +47,3 @@ while run:
     pygame.display.update()
 
 pygame.quit()
-
-
-# keys = pygame.key.get_pressed()
-#     if keys[pygame.K_LEFT] and x > 0:
-#         x -= v
-#     if keys[pygame.K_RIGHT] and x < 400:
-#         x += v
