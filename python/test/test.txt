@@ -1,3 +1,0 @@
-Amit is a good guy
-sound = 1
-time = False
