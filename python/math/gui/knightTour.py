@@ -7,7 +7,7 @@ import math
 pygame.init()
 width = 500
 height = 500
-row = 4
+row = 5
 column = 5
 pygame.display.set_caption("Knight Tour")
 win = pygame.display.set_mode((width, height))

@@ -7,7 +7,7 @@ total = 0
 
 while words:
     temp = words.pop(0)
-    # print(temp)
+    print(temp)
     total += 1
     if len(temp) < n:
         for i in str:

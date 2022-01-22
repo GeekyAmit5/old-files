@@ -15,7 +15,7 @@ def sub():
                 B.pop()
 
 
-n = 6
+n = int(input('Enter the number of elements: '))
 A = [x for x in range(n)]
 # n = 4
 # A = {'a', 'b', 'c', 'd'}
