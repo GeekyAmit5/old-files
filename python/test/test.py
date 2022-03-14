@@ -1,25 +1,32 @@
-import random
+import pyautogui
 import time
 
-score = 0
-Time = 0
-letters = list('abcdefghijklmnopqrstuvwxyz'.upper())
+time.sleep(3)
 
-while score<50:
-    letter = random.choice(letters)
-    t0 = time.time()
-    guess = int(input('What is rank of '+letter+' ?\n'))
-    Time += time.time() - t0
-    if guess == ord(letter) - 64:
-        print('Correct!\n')
-        score+=1
-    else:
-        print('\nWrong!')
-        print('Rank of',letter,'is',ord(letter)-64,'\n')
-        break
-else:
-    print('You Know Everything!')
+screenWidth, screenHeight = pyautogui.size() # Get the size of the primary monitor.
+# print(screenWidth, screenHeight)
 
-if score:
-    print('Your Average time is: ',Time/score,'seconds')
-print('Your Score is',2*score)
+# currentMouseX, currentMouseY = pyautogui.position() # Get the XY position of the mouse.
+# print(currentMouseX, currentMouseY)
+
+# pyautogui.moveTo(100, 150) # Move the mouse to XY coordinates.
+
+#pyautogui.click()          # Click the mouse.
+# pyautogui.click(100, 200)  # Move the mouse to XY coordinates and click it.
+# pyautogui.click('button.png') # Find where button.png appears on the screen and click it.
+
+# >>> pyautogui.move(400, 0)      # Move the mouse 400 pixels to the right of its current position.
+# >>> pyautogui.doubleClick()     # Double click the mouse.
+# >>> pyautogui.moveTo(500, 500, duration=2, tween=pyautogui.easeInOutQuad)  # Use tweening/easing function to move mouse over 2 seconds.
+
+pyautogui.write('how to hack whatsapp', interval=0.25)  # type with quarter-second pause in between each key
+pyautogui.press('enter')     # Press the Esc key. All key names are in pyautogui.KEY_NAMES
+
+# >>> with pyautogui.hold('shift'):  # Press the Shift key down and hold it.
+#         pyautogui.press(['left', 'left', 'left', 'left'])  # Press the left arrow key 4 times.
+# >>> # Shift key is released automatically.
+
+# >>> pyautogui.hotkey('ctrl', 'c') # Press the Ctrl-C hotkey combination.
+
+# >>> pyautogui.alert('This is the message to display.') # Make an alert box appear and pause the program until OK is clicked.
+print('Done!')
